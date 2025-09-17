@@ -9,9 +9,7 @@ def get_temp_file_name():
     return os.path.join(tempfile.gettempdir(), f)
 
 def ensure_wav(input_path):
-    print("'", input_path , "'")
     unescaped = urllib.parse.unquote(input_path, encoding='utf-8', errors='replace')
-    print(unescaped)
     wav_path = get_temp_file_name()
     subprocess.run([
         "ffmpeg", "-y", "-i", unescaped, "-ss", "10", "-t", "60", "-ac", "1", "-ar", "16000", wav_path
@@ -54,9 +52,9 @@ def main():
                                                 start_sec=args.start_sec,
                                                 stop_sec=args.stop_sec
                                                 )
-
     return bool(has_speech)
 
 if __name__ == "__main__":
     result = main()
-    print(1 if result else 0)
+    print("1" if result else "0")
+
