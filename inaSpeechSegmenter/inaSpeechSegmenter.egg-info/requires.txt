@@ -1,0 +1,10 @@
+numpy
+pandas
+scikit-image
+pyannote.core
+matplotlib
+Pyro4
+pytextgrid
+soundfile
+tensorflow
+onnxruntime-silicon
