@@ -1,6 +1,6 @@
-Metadata-Version: 2.1
+Metadata-Version: 2.4
 Name: inaSpeechSegmenter
-Version: 0+unknown
+Version: 0+untagged.4.g6002762.dirty
 Summary: CNN-based audio segmentation toolkit. Does voice activity detection, speech detection, music detection, noise detection, speaker gender recognition.
 Home-page: https://github.com/ina-foss/inaSpeechSegmenter
 Author: David Doukhan
@@ -33,6 +33,28 @@ Classifier: Topic :: Sociology
 Requires-Python: >=3.6
 Description-Content-Type: text/markdown
 License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-image
+Requires-Dist: pyannote.core
+Requires-Dist: matplotlib
+Requires-Dist: Pyro4
+Requires-Dist: pytextgrid
+Requires-Dist: soundfile
+Requires-Dist: tensorflow
+Requires-Dist: onnxruntime-silicon
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
 
 Split audio signal into homogeneous zones of speech, music and noise. Then detects speaker gender.  
 
